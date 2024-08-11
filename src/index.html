@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 1 - HTML</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lab 1 HTML" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <h1>Main Article Heading</h1>
+      <img
+        src="https://picsum.photos/400/400"
+        alt="Picsum Photos"
+        width="150"
+        height="150"
+      />
+      <img
+        src="./assets/html_lab_image.jpg"
+        alt="HTML Lab Image"
+        width="150"
+        height="150"
+      />
+      <video autoplay width="250">
+        <source src="./assets/flower.webm" type="video/webm" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <audio autoplay src="./assets/t-rex-roar.mp3">
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+      <p>
+        This is the content of the first article. It provides some information
+        and has its own heading.
+      </p>
+      <h2>Unique Heading for the Second Article</h2>
+      <p>
+        This is the content of the second article. It has a unique heading and
+        is styled separately from the first article.
+      </p>
+      <h2>Unique Heading for the Third Article</h2>
+      <p>
+        This is the content of the third article. It includes its own unique
+        heading and content, following the previous articles.
+      </p>
+    </article>
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+    <p>p represents paragraph without preserving spacing</p>
+    <pre>
+      Text in a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks
+    </pre>
+    <ul>
+      <li>Unordered</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ol>
+      <li>Ordered</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <li>
+      Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <article>
+      <!-- Content added in previous points -->
+    </article>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="form.html">Home</a>
+      </nav>
+    </header>
+    <article>
+      <h1>First Article</h1>
+      <p>This is the content of the first article.</p>
+    </article>
+    <article>
+      <h2>Second Article with Table</h2>
+      <p>This article contains a table below:</p>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Combined Header</th>
+            <th>Third Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+            <td>Third cell - first row</td>
+          </tr>
+          <tr>
+            <td>First cell - second row</td>
+            <td>Second cell - second row</td>
+            <td>Third cell - second row</td>
+          </tr>
+          <tr>
+            <td>First cell - third row</td>
+            <td>Second cell - third row</td>
+            <td>Third cell - third row</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <main>
+      <h1>My HTML learning journey</h1>
+      <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+    </main>
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+      <div>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName">
+      </div>
+      <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName">
+      </div>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label>
+  </form>
+    </form>
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>
