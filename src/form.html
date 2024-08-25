@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html>
+<script src="form.js"></script>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
 
-<head>
-</head>
+    <main>
+        <form onsubmit="onSubmit(event)" >
+        <div>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
+        <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" />
+        </div>
+        <div>
+          <input type="radio" id="html" name="html" value="HTML" />
+          <label for="html">HTML</label>
+        </div>
+        <div>
+          <input type="radio" id="css" name="css" value="CSS" />
+          <label for="css">CSS</label>
+        </div>
+        <div>
+          <input type="radio" id="js" name="js" value="JS" />
+          <label for="js">JavaScript</label>
+        </div>
+        <div>
+          <input type="checkbox" id="car" name="vehicle" value="Car">
+          <label for="car">Car</label>
+        </div>
+        <div>
+          <input type="checkbox" id="motorcycles" name="vehicle" value="Motorcycle">
+          <label for="Motorcycle">Motorcycle</label>
+        </div>
+        <div>
+          <input type="checkbox" id="truck" name="vehicle" value="Truck">
+          <label for="Truck">Truck</label>
+        </div>
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="audi">AUDI</option>
+      </select>
+        </label>
+        <div>
+        <button type="submit">Submit form</button>
+      </div>
+      </form>
+    </main>
 
-<body>
-  <header>
-    <nav>
-      <!-- works like <a href="/index.html">Home</a> -->
-      <a href="index.html">Home</a>
-    </nav>
-  </header>
-
-  <main>
-  </main>
-
-  <footer>Copyright &copy; 2024</footer>
-</body>
-
+    <footer>Copyright &copy; 2024</footer>
+  </body>
 </html>
