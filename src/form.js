@@ -9,8 +9,8 @@ function onSubmit(event) { //event = action when clicked
   const selectedRadio = document.querySelector('input[name="html"]:checked'); //html
   //const selectedRadio = variable for radio button element
 
-  
-  //getElementById + querySelector = get form element value / querySelectorAll = checkbox
+
+  //getElementById & querySelector = get form element value / querySelectorAll = checkbox
   document.querySelector('input[name="css"]:checked'); //css
   document.querySelector('input[name="js"]:checked'); //js
   const vehicles = document.querySelectorAll('input[name="vehicle"]:checked'); //vehicle
